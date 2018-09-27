@@ -1,0 +1,27 @@
+<!-- extend base layout -->
+{% extends "_layout.html" %}
+
+{% block content %}
+        <section id="tips">
+            <h2>Tips Administration</h2>
+
+            <table cellspacing="0" id="tips-data">
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th class="tip-column-head">Tip</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="data-loading" colspan="3">
+                            <img src="/static/images/ajax-loader.gif" alt="Loading tips - please wait." />
+                            <em>Loading...</em>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+{% endblock %}

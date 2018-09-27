@@ -1,0 +1,22 @@
+#leagues-data,
+#live-update-status { overflow: auto;border: 1px solid #444444;margin: 0 0 10px;height: 166px;  }
+
+#leagues-data table { margin: 0;min-height: 166px; }
+#leagues-data td { vertical-align: middle; }
+
+#live-update-status {
+    display: block; padding: 8px 1%;
+    background: #eeeeee; border: 1px solid #444444;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size: 85%; color: #444444;
+}
+
+.extracting,
+.extracting:hover { background: #cccccc url('/static/images/updating-cccccc.gif') no-repeat 50%; }
+
+.extracted,
+.extracted:hover { background: #cccccc url('/static/images/success.svg') no-repeat 50%; background-size: contain; }
+
+.error { color: red; }
+
+button { min-height: 38px; float: right; }

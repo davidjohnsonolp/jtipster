@@ -1,0 +1,76 @@
+<!-- extend base layout -->
+{% extends "_layout.html" %}
+
+{% block content %}
+            <section id="selected-predictions" class="responsive-hidden">
+                <h2>Selections</h2>
+
+                <form action="/predictions/create" id="selected-predictions-form" method="post">
+                    <table cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td class="data-loading" colspan="3">
+                                    NO SELECTIONS
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td id="combined-odds" colspan="3">0.00 - treble</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div>
+                                        <label for="accumulator-stake">STAKE: £</label>
+                                        <input id="accumulator-stake" type="number">
+                                    </div>
+                                    <div>
+                                        RETURNS: <output id="accumulator-return" for="accumulator-stake">£0.00</output>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button id="add-to-my-bets" type="submit">Add to My Bets</button>
+                </form>
+            </section>
+
+            <section id="predictions-by-market">
+                <h2>Predictions</h2>
+
+                <ol id="odds-settings">
+                    <li><label for="odds-display-decimal">Decimal</label><input type="radio" name="odds-display" id="odds-display-decimal" data-id="decimal" /></li>
+                    <li><label for="odds-display-fractional">Fractional</label><input type="radio" name="odds-display" id="odds-display-fractional" data-id="fractional" /></li>
+                </ol>
+
+                <ul id="filter-list">
+                    <li>
+                        <select id="filter-date">
+                            <option value="ALL">All</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <table class="fixtures selected" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th class="check-list"></th>
+                            <th class="kick-off">Kick Off</th>
+                            <th>Tip</th>
+                            <th>Odds</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="data-loading" colspan="4">
+                                <img src="/static/images/ajax-loader.gif" alt="Loading tips - please wait." />
+                                <em>Loading...</em>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <div class="addthis_sharing_toolbox"></div>
+{% endblock %}

@@ -1,0 +1,15 @@
+#home { background: none;color: #000; }
+#home h2 { margin: 120px 0 0; font-size: 3em; }
+#home p { font-size: 2em; }
+#home .addthis_native_toolbox { margin: 40px 0 0; }
+#home .button { border: 1px solid #1e1e1e; }
+
+@media screen and (max-width: 680px)
+{
+    #home { padding: 0; }
+    #home h2,
+    #home p { margin: 0;font-size: 1.5em;padding: 10px;color: white;background: transparent; }
+    #home ol { margin: 10px 0 0; }
+
+    #home .addthis_native_toolbox a { float: none;display: block;margin: 10px 0; }
+}

@@ -1,0 +1,30 @@
+<!-- extend base layout -->
+{% extends "_layout.html" %}
+
+{% block content %}
+        <section id="extract">
+            <h2>Data Extract</h2>
+            <p>
+                This will download ImportIO data and generate tips, which are imported into the database to be verified.
+                An output of the operation will be displayed in the grey box.
+            </p>
+
+            <div id="leagues-data">
+
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td class="data-loading">
+                                <img src="/static/images/ajax-loader.gif" alt="Loading tips - please wait." />
+                                <em>Loading...</em>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <output id="live-update-status"></output>
+
+        </section>
+{% endblock %}

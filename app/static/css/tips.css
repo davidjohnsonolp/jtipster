@@ -1,0 +1,30 @@
+/** TIPS DATA TABLE **/
+#tips-data { border: solid 1px #1e1e1e;margin: 10px 0; }
+#tips-data th,
+#tips-data td { vertical-align: top;padding: 5px; }
+#tips-data label,
+#tips-data span { display: block; }
+#tips-data em { display: block;font-weight: bold;font-style: normal; }
+
+#tips-data .stats-link { color: #a5212e;text-decoration: underline;cursor: pointer; }
+#tips-data .stats-link:hover { text-decoration: none; }
+#tips-data .stats-content { display: none;margin: 10px 0 0; }
+
+.tip-column-head { width: 65%; }
+.button { margin: 5px; }
+
+#tips-data ul { margin: 0;padding: 0;overflow: hidden; }
+#tips-data ul li {padding: 0 5px 5px 0;list-style: none;float: left; }
+
+input { width: 50px; }
+select { width: 160px; }
+input, select {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 650px)
+{
+    #tips-data ul li { float: none; }
+}

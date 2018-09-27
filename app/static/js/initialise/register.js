@@ -1,0 +1,1 @@
+var registerView = new RegisterView({ el: $('#register'), model: new User() });

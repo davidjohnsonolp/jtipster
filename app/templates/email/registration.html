@@ -1,0 +1,14 @@
+<!-- extend base layout -->
+{% extends "email/_layout.html" %}
+
+{% block content %}
+    <tr>
+        <td>
+            <p>Dear {{ username }},</p>
+            <p>Welcome to the website.</p>
+            <p>{{ url_for('index', _external=True) }}</p>
+            <p>Regards,</p>
+            <p>JTipster</p>
+        </td>
+    </tr>
+{% endblock %}

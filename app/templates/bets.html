@@ -1,0 +1,37 @@
+<!-- extend base layout -->
+{% extends "_layout.html" %}
+
+{% block content %}
+            <section id="bets">
+                <h2>My Bets</h2>
+                <table cellspacing="0" cellpadding="0" id="my-bets-data">
+                    <thead class="responsive-hidden">
+                        <tr>
+                            <th>Bet</th>
+                            <th class="responsive-hidden">Odds</th>
+                            <th>Stake</th>
+                            <th>Return</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="data-loading" colspan="7">
+                                <img src="/static/images/ajax-loader.gif" alt="Loading tips - please wait." />
+                                <em>Loading...</em>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="responsive-hidden"></td>
+                            <td class="total-label">Total:</td>
+                            <td id="total-stake">£0.00</td>
+                            <td id="total-return">£0.00</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </section>
+{% endblock %}

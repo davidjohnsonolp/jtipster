@@ -1,0 +1,9 @@
+Dear {{ username }},
+
+Welcome to the website.
+
+{{ url_for('index', _external=True) }}
+
+Regards,
+
+JTipster
